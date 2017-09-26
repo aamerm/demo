@@ -29,7 +29,11 @@ repositories {
 
 
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter-cache')
 	compile('org.springframework.boot:spring-boot-starter-web')
+
+	//cache dependencies
+	compile('org.springframework.boot:spring-boot-starter-cache')
+	compile 'com.github.ben-manes.caffeine:caffeine'
+
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
